@@ -1,0 +1,22 @@
+﻿<Window x:Class="Checker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Checker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Azure">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="30">
+            <Label FontSize="20">URL</Label>
+            <TextBox x:Name="txturl" FontSize="20"></TextBox>
+            <Button x:Name="btnfolder" Content="Select Folder"  Height="35"   Margin="0, 20, 0, 30" Background="White"  FontWeight="Bold" Foreground="Black" Cursor="Hand" Click="btnfolder_Click"  FontSize="14"/>
+            <!--<Button x:Name="btnupdate" Content="Update" Height="29"  Margin="0, 0, 0, 20" Background="White" FontWeight="Bold" Foreground="Black" FontSize="14" Cursor="Hand" Click="btnupdate_Click"/>-->
+
+            <Button x:Name="btnclose" Content="Close" Height="29"  Background="White" FontWeight="Bold" Foreground="Black" FontSize="14" Cursor="Hand" Click="btnclose_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
